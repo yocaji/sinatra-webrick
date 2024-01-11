@@ -1,7 +1,8 @@
 require 'sinatra'
+require 'debug'
 
 class App < Sinatra::Application
   get '/' do
-    'Eyyyyy!'
+    request.env.inspect
   end
 end
